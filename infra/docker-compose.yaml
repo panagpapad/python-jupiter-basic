@@ -1,0 +1,11 @@
+version: '3'
+services:
+  audio_jupiter:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    image: audio_jupiter:latest
+    ports:
+      - "8888:8888"
+    volumes:
+      - ./../volume:/home/jovyan
